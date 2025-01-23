@@ -1,0 +1,129 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #F6F5F5;
+    color: #333;
+    transition: background-color 0.5s ease;
+}
+
+body.scrolled {
+    background-color: #F6F5F5;
+}
+
+@keyframes scrollBackground {
+    0% { background-color: #F6F5F5; }
+    100% { background-color: #F6F5F5; }
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header {
+    background-color: #F6F5F5;
+    color: #333;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.logo {
+    width: 150px;
+    height: auto;
+}
+
+main {
+    padding: 2rem;
+    text-align: center;
+}
+
+footer {
+    background-color: #F6F5F5;
+    color: #333;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.btn {
+    border-radius: 25px;
+    padding: 10px 20px;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.btn-primary {
+    background-color: #ff6f61;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #ff8a80;
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn-secondary {
+    background-color: #4db6ac;
+    border: none;
+}
+
+.btn-secondary:hover {
+    background-color: #82e9de;
+    transform: translateY(-3px);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container-fluid {
+    transition: filter 0.5s ease;
+}
+
+.container-fluid:hover {
+    filter: hue-rotate(15deg);
+}
+
+img {
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .hero-banner {
+        padding: 3rem 1rem;
+    }
+
+    .container {
+        padding: 1rem;
+    }
+}

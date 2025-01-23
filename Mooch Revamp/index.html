@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mooch Radio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container-fluid text-dark py-3" style="background-color: #F6F5F5;">
+            <div class="row align-items-center">
+                <div class="col-md-3 text-center">
+                    <img src="/gfx/Mooch Logo.jpg" alt="Mooch Radio Logo" class="logo" style="width: 100px;">
+                </div>
+                <div class="col-md-9">
+                    <nav class="d-flex justify-content-end">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="contact.html">
+                                    <img src="contact.svg" alt="Contact" style="width: 20px;">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" href="roadmap.html">
+                                    <img src="./gfx/Mooch RoadMap .jpg" alt="Roadmap" style="width: 20px;">
+                                    Roadmap
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container-fluid hero-banner text-center text-white py-5" style="background-color: #ff6f61;">
+            <div class="row align-items-center">
+                <div class="col-md-8 offset-md-2">
+                    <h1 class="display-4">Experience Music Together in Real-Time</h1>
+                    <p class="lead">Join our listening rooms and sync playback with friends and family... Anywhere</p>
+                    <a href="#" class="btn btn-primary btn-lg mr-2">Sign Up</a>
+                    <a href="#" class="btn btn-secondary btn-lg">Explore Rooms</a>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-light py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 text-center">
+                        <img src="sync.svg" alt="Sync Playback" style="width: 80px;">
+                        <h2>Sync Playback</h2>
+                        <p>Enjoy seamless synchronization of music playback with anyone, anywhere.</p>
+                        <img src="sync-feature.jpg" alt="Sync Feature" class="img-fluid mt-3">
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img src="playlist.svg" alt="Custom Playlists" style="width: 80px;">
+                        <h2>Custom Playlists</h2>
+                        <p>Create and share playlists with custom themes to suit any mood or event.</p>
+                        <img src="playlist-feature.jpg" alt="Playlist Feature" class="img-fluid mt-3">
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <img src="community.svg" alt="Global Community" style="width: 80px;">
+                        <h2>Global Community</h2>
+                        <p>Connect with music lovers worldwide and explore diverse musical tastes.</p>
+                        <img src="community-feature.jpg" alt="Community Feature" class="img-fluid mt-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid py-5" style="background-color: #4db6ac;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2>Interactive Features</h2>
+                        <p>Engage with interactive features like live chat and voting for the next song.</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h2>Exclusive Content</h2>
+                        <p>Access exclusive content from your favorite artists and discover new talent.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid bg-light py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>Collaborative Listening</h2>
+                        <p>At Mooch Radio, we believe in the power of music to bring people together. Our platform allows users to create and join listening rooms, where they can sync playback with friends and family in real-time. Whether you're hosting a party or just chilling with friends, Mooch Radio ensures everyone is on the same beat.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid py-5" style="background-color: #ffcc80;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <h2>Join the Mooch Radio Community</h2>
+                        <p>Be part of a vibrant community that celebrates music and creativity. Sign up today and start your musical journey with Mooch Radio.</p>
+                        <a href="#" class="btn btn-primary btn-lg">Get Started</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid hero-banner text-center text-white py-5" style="background-color: #3e5879;">
+            <div class="row align-items-center">
+                <div class="col-md-8 offset-md-2">
+                    <h1 class="display-4">Discover New Music</h1>
+                    <p class="lead">Explore a world of music with our curated playlists and recommendations.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid hero-banner text-center text-white py-5" style="background-color: #00a5cf;">
+            <div class="row align-items-center">
+                <div class="col-md-8 offset-md-2">
+                    <h1 class="display-4">Your Music, Your Way</h1>
+                    <p class="lead">Personalize your listening experience with custom themes and settings.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Mooch Radio</p>
+    </footer>
+    <script>
+        window.addEventListener('scroll', () => {
+            const body = document.body;
+            const scrollPosition = window.scrollY;
+            const maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+            const scrollPercentage = scrollPosition / maxScroll;
+
+            if (scrollPercentage > 0.1) {
+                body.classList.add('scrolled');
+            } else {
+                body.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>
